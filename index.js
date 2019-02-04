@@ -19,16 +19,16 @@ for (let i=0; i<argv_len; i++) {
       credentials = argv[i+1];
       break;
     case '--region':
-      region = arg[i+1];
+      region = argv[i+1];
       break;
     case '--bucket':
-      Bucket = arg[i+1];
+      Bucket = argv[i+1];
       break;
     case '--key':
-      Key = arg[i+1];
+      Key = argv[i+1];
       break;
     case '--file':
-      file = arg[i+1];
+      file = argv[i+1];
       break;
   }
 }
@@ -47,8 +47,8 @@ async function main() {
 
   const s3 = new S3({
     apiVersion: '2006-03-01',
-    accessKeyId: cred['Access key ID'],
-    secretAccessKey: cred['Secret access key'],
+    accessKeyId: cred[0]['Access key ID'],
+    secretAccessKey: cred[0]['Secret access key'],
   });
 
   let Body;
