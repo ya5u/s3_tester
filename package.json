@@ -1,0 +1,13 @@
+{
+  "name": "s3_tester",
+  "version": "1.0.0",
+  "description": "AWS S3 upload tester",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/ya5u/s3_tester.git",
+  "author": "Yasutaka Shinzaki <shinzaki@yasu26.tech>",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.395.0",
+    "csv-parse": "^4.3.1"
+  }
+}
